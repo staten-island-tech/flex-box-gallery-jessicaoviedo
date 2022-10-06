@@ -80,7 +80,7 @@ img {
     flex-grow: 2;
 }
 .child-3 {
-    border: 3px solid blue;
+    border: 3px solid red;
     height: 600px;
     flex-grow: 2;
 }
