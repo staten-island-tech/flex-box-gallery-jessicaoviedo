@@ -1,21 +1,26 @@
 html, 
 body,
 * {
+    background-color: #B1E9E8;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-size: 62.5%; /* Normally 100% is 16 px we want the size to be 10px so we do 62.5% */
 }
-
+body {
+    background-color: #B1E9E8;
+}
 .header {
     background-color: #093A3E;
-    color: white;
+    color: grey;
     font-size: 50px;
     text-align: center;
+    border: 5px solid #124559;
+    border-radius: 3px;
     margin: 3vw;
     background-color: #3AAFB9;
     font-family: 'Frank Ruhl Libre', serif;
-font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope', sans-serif;
 
 }
 
@@ -38,21 +43,22 @@ img {
 .about-row {
     justify-content: space-between;
     background-color: #B1E9E8;
-    height: 100%;
+    height:100%;
     width: 85vw;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
 }
 .about-col {
     background-color: #64E9EE;
     height: 90%;
-    width: 27%;
+    width:30%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-
 }
+
 .about-img {
     height: 15%;
     box-shadow: 10px 10px 10px;
@@ -65,35 +71,89 @@ img {
 }
 .about-funnydogs {
     background-image: url(../img/buffdog.jpg);
-    height: 30%;
-    width: 80%;
+    height: 100rem;
+    width: 27%;
     background-size: cover;
     background-position: center;
-    border: 5px solid #16697A;
+    border: 10px solid #16697A;
+    border-radius: 7px;
     box-shadow: 10px 10px 20px;
+    margin: 50px 0;
 }
 
 
 .child  {
     width: 28%;
 }
+.gallery {
+    position: relative;
+    justify-content: space-evenly;
+}
 
 .gallery-parent {
     margin: 0 auto;
     height: 45rem;
     width: 40rem;
+    text-align: center;
 }
 .demo-photo {
     height: 15rem;
+    transition: all 0.3s;
+    outline-offset: 1rem;
 }
-.form:before {
-    content: "\1F436";
-    font-size: 4rem;
+.demo-photo:hover {
+    transform: scale(1.1);
+    outline: 1rem solid#2F4858;
+}
+.form {
+    display: flex;
+    justify-content: center;
 }
 .button {
     font-size: 3rem;
     transition: all 0.3s;
+    background-color: aliceblue;
+    margin: 0 auto;
 }
 .button:hover {
     transform: scale(1.2)
+}
+
+.skew {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.animation {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    animation: test 5s infinite;
+}
+@keyframes test{
+    0%{
+        left: 50%;
+        bottom: 10%;
+        background-color: red;
+    }
+    25%{
+        left: 50%;
+        bottom: 20%;
+        background-color: blue;
+    }
+    50%{
+        left: 55%;
+        bottom: 20%;
+        background-color: green;
+    }
+    75%{
+        left: 55%;
+        bottom: 10%;
+        background-color: yellow;
+    }
+    100%{
+        left: 50%;
+        bottom: 10%;
+        background-color: purple;
+    }
 }
