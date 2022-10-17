@@ -79,19 +79,23 @@ img {
     border-radius: 7px;
     box-shadow: 10px 10px 20px;
     margin: 50px 0;
+    transition: 0.75s;
 }
-
+.about-funnydogs:hover {
+    rotate: 360deg;
+}
 
 .child  {
     width: 28%;
 }
 .gallery {
     position: relative;
-    justify-content: space-evenly;
+
+    margin-top: 10px;
 }
 
 .gallery-parent {
-    margin: 0 auto;
+    margin: auto;
     height: 45rem;
     width: 40rem;
     text-align: center;
@@ -106,6 +110,7 @@ img {
     outline: 1rem solid#2F4858;
 }
 .form {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -120,40 +125,8 @@ img {
 }
 
 .skew {
-    font-size: 3rem;
+    font-size: 6rem;
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
-.animation {
-    height: 2rem;
-    width: 2rem;
-    position: absolute;
-    animation: test 5s infinite;
-}
-@keyframes test{
-    0%{
-        left: 50%;
-        bottom: 10%;
-        background-color: red;
-    }
-    25%{
-        left: 50%;
-        bottom: 20%;
-        background-color: blue;
-    }
-    50%{
-        left: 55%;
-        bottom: 20%;
-        background-color: green;
-    }
-    75%{
-        left: 55%;
-        bottom: 10%;
-        background-color: yellow;
-    }
-    100%{
-        left: 50%;
-        bottom: 10%;
-        background-color: purple;
-    }
-}
+
