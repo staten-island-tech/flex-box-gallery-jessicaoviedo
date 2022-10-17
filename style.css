@@ -1,7 +1,7 @@
 html, 
 body,
 * {
-    background-color: #B1E9E8;
+ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -90,7 +90,6 @@ img {
 }
 .gallery {
     position: relative;
-
     margin-top: 10px;
 }
 
@@ -108,9 +107,17 @@ img {
 .demo-photo:hover {
     transform: scale(1.1);
     outline: 1rem solid#2F4858;
+    border: none;
+    background: #DBE9EE;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
 }
 .form {
-    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -129,4 +136,31 @@ img {
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
-
+.animation {
+    height: 1rem;
+    width: 5rem;
+    position: absolute;
+    animation: test 5s infinite
+}
+@keyframes test{
+    0%{
+        left: 10%;
+        bottom: 0%;
+    }
+    25%{
+        left: 25%;
+        bottom: 0%;
+    }
+    50%{
+        left: 50%;
+        bottom: 0%;
+    }
+    75%{
+        left: 75%;
+        bottom: 0%;
+    }
+    100%{
+        left: 90%;
+        bottom: 0%;
+    }
+}
