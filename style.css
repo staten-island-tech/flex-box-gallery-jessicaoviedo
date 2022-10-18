@@ -32,7 +32,7 @@ body {
 }
 img {
     width: 80%;
-    height: 4rem;
+    height: 5rem;
     border: 5px solid #16697A;
 }
 
@@ -71,16 +71,23 @@ img {
 }
 .about-funnydogs {
     background-image: url(../img/buffdog.jpg);
-    height: 100rem;
-    width: 27%;
     background-size: cover;
     background-position: center;
     border: 10px solid #16697A;
     border-radius: 7px;
     box-shadow: 10px 10px 20px;
     margin: 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15rem;
+    width:18%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
     transition: 0.75s;
 }
+
 .about-funnydogs:hover {
     rotate: 360deg;
 }
@@ -100,9 +107,12 @@ img {
     text-align: center;
 }
 .demo-photo {
-    height: 15rem;
+    height: 20rem;
+    width: 14rem;
     transition: all 0.3s;
     outline-offset: 1rem;
+    flex-wrap: wrap;    
+    justify-items: baseline;
 }
 .demo-photo:hover {
     transform: scale(1.1);
@@ -137,10 +147,21 @@ img {
     font-family: 'Raleway', sans-serif;
 }
 .animation {
-    height: 1rem;
-    width: 5rem;
+    height: 0rem;
+    width: 7rem;
     position: absolute;
     animation: test 5s infinite
+}
+
+@media (orientation: landscape) {
+    .header {
+        color: black;
+    }
+}
+@media (orientation: portrait) {
+    .about-funnydogs {
+        border-color: #20384c;
+    }
 }
 @keyframes test{
     0%{
@@ -160,7 +181,7 @@ img {
         bottom: 0%;
     }
     100%{
-        left: 90%;
+        left:  85%;
         bottom: 0%;
     }
 }
